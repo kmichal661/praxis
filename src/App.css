@@ -1,38 +1,165 @@
-.App {
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200&display=swap");
+body {
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+.navlink {
+  text-decoration: none;
+  font-family: inherit;
+  color: inherit;
+}
+
+.navbar {
+  color: white;
+  background-color: black;
+  position: fixed;
+  z-index: 99;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 10%;
+}
+.navbar .navbarElement {
+  display: inline;
+  align-items: center;
+  padding: 0.7em;
+  margin-left: 1em;
+  cursor: pointer;
+  width: 5em;
+  text-align: center;
+  margin-bottom: 1em;
+  transition: 0.5s ease;
+  position: relative;
+}
+.navbar .navbarElement:before {
+  content: "";
+  position: absolute;
+  width: calc(100% + 2px);
+  height: calc(100% + 2px);
+  top: calc(1px/-1);
+  left: calc(1px/-1);
+  background: linear-gradient(to right, rgba(255, 255, 255, 0.4) 0%, rgba(255, 255, 255, 0.4) 100%), linear-gradient(to top, rgba(255, 255, 255, 0.4) 50%, transparent 50%), linear-gradient(to top, rgba(255, 255, 255, 0.4) 50%, transparent 50%), linear-gradient(to right, rgba(255, 255, 255, 0.4) 0%, rgba(255, 255, 255, 0.4) 100%), linear-gradient(to left, rgba(255, 255, 255, 0.4) 0%, rgba(255, 255, 255, 0.4) 100%);
+  background-size: 100% 1px, 1px 200%, 1px 200%, 0% 1px, 0% 1px;
+  background-position: 50% 100%, 0% 0%, 100% 0%, 100% 0%, 0% 0%;
+  background-repeat: no-repeat, no-repeat;
+  transition: transform 0.3s ease-in-out, background-position 0.3s ease-in-out, background-size 0.3s ease-in-out;
+  transform: scaleX(0) rotate(0deg);
+  transition-delay: 0.6s, 0.3s, 0s;
+}
+.navbar .navbarElement:hover:before {
+  background-size: 200% 1px, 1px 400%, 1px 400%, 55% 1px, 55% 1px;
+  background-position: 50% 100%, 0% 100%, 100% 100%, 100% 0%, 0% 0%;
+  transform: scaleX(1) rotate(0deg);
+  transition-delay: 0s, 0.3s, 0.6s;
+}
+
+.wholeCarousel {
+  width: 80vw;
+  margin-left: 10vw;
+}
+.wholeCarousel .carouselTile {
+  width: 100vw;
+  height: 80vh;
+  margin-top: 3em;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.about {
+  width: 100vw;
+  height: 100vh;
+  clear: both;
+}
+.about .aboutImageSection {
+  margin-left: 5vw;
+  float: left;
+}
+.about .aboutImageSection img {
+  width: 25vw;
+  height: 80vh;
+  border-radius: 5%;
+}
+.about .aboutTextSection {
+  margin-right: 5vw;
+  line-height: 2em;
+  margin-left: 35vw;
+}
+
+.therapies {
+  display: flex;
+  justify-content: center;
+}
+.therapies .therapie {
+  width: 13.6vw;
+  height: 45vh;
+  margin-left: 2vw;
+  display: flex;
+  justify-content: center;
+  color: white;
+  text-align: center;
+  align-items: center;
+  display: inline-block;
+  border-radius: 5%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  opacity: 0.7;
+  transition: 0.5s ease;
+  position: relative;
+  cursor: pointer;
+}
+.therapies .therapie:hover .therapieOverlay {
+  height: 100%;
+}
+.therapies .therapieOverlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+  width: 100%;
+  height: 0;
+  transition: 0.5s ease;
+  border-radius: 5%;
+}
+.therapies .therapieText {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+  user-select: none;
+}
+
+.therapyActiveCard {
+  width: 80vw;
+  line-height: 2em;
+  margin-left: 10vw;
+}
+.therapyActiveCard h2 {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.footer {
+  margin-top: 20vh;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  background-color: #000;
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.footer .footerAddress {
+  width: 50vw;
+}
+.footer .footerAddress .footerInner {
+  margin-left: 2vw;
+}
+.footer .footerIcon {
+  margin-right: 2vw;
+  color: rgba(255, 255, 255, 0.4);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+/*# sourceMappingURL=App.css.map */
