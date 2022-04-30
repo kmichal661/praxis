@@ -1,4 +1,4 @@
-import hotStone from './img/hot-stone.jpg'
+import hotStone from './img/hot-stone.png'
 import foot from './img/foot.jpg'
 import massage from './img/massage.jpg'
 import { useState } from 'react'
@@ -38,11 +38,11 @@ function Threapies(){
     const therapies = [
         {
             id: 0,
-            title: "Hot Stone Massage",
-            shortDescription: "therapie 1 description message",
+            title: "Krankengymnastik",
+            shortDescription: "Krankengymnastik ist eine Form der äußerlichen Anwendung",
             img: hotStone,
             link: "therapie1 link to full description ?",
-            fullDescription: "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like)."
+            fullDescription: "Instabile Gelenke werden stabilisiert, Gleichgewichtsübungen helfen die Gangsicherheit wiederherzustellen und Schwindelübungen den Schwindel zu beseitigen. Der Einsatz der Krankengymnastik ist sehr vielfältig und richtet sich individuell nach der Diagnose des Patienten."
         },
         {
             id:1,

@@ -5,6 +5,7 @@ import { Tile2, Tile1, Tile3 } from "./Tiles";
 function CarousellHome(){
     return(
         <div className="wholeCarousel">
+            <div className='navpad'></div>
         <Carousel
             showArrows={false}
             centerMode={true}

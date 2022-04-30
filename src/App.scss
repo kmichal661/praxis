@@ -68,6 +68,10 @@ body{
   color: inherit;
 }
 
+.navpad{
+  height: 5vw;
+}
+
 .navbar{
     color: white;
     background-color: black;
@@ -105,7 +109,9 @@ body{
     width: 100vw;
     height: 80vh;
     margin-top: 3em;
-    background-size: contain;
+    // background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
     background-repeat: no-repeat;
     
   }
@@ -136,12 +142,14 @@ body{
   // display: inline-block;
   // background-color: #000;
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   .therapie{
 
-    width: 13.6vw;
-    height: 45vh;
+    width: 200px;
+    height: 300px;
     margin-left: 2vw;
+    margin-top: 2vh;
     display: flex;
     justify-content: center;
     color:white;
@@ -187,6 +195,17 @@ body{
     transform: translate(-50%, -50%);
     text-align: center;
     user-select: none;
+    button{
+      color: unset;
+      background-color: unset;
+      background-image: unset;
+    }
+    // .btn{
+    //   border-radius: 0%;
+    //   border: none;
+
+    //   // font-size: 0.7em;
+    // }
     
   }
 
@@ -197,6 +216,7 @@ body{
   width: 80vw;
   line-height: 2em;
   margin-left: 10vw;
+  white-space: pre-wrap;
   h2{
     text-align: center;
   }
@@ -219,4 +239,125 @@ body{
     color: rgba(255, 255, 255, 0.4);
   }
 }
+
+.pageNotFound{
+  h1{
+    font-weight: bold;
+  }
+  p{
+    font-weight: bold;
+  }
+  position: relative;
+  width: 100%;
+  text-align: center;
+  padding-top: 15vw;
+}
+
+.therapieen{
+  // padding-bottom: 10em;
+  padding-top: 5vw;
+  h2{
+    text-align: center;
+  }
+  .therapieen-front-line{
+    margin-left: 20vw;
+    margin-right: 20vw;
+    text-align: left;
+  }
+}
+
+@media screen and (max-width: 600px) {
+
+  .navbar{
+    .navbarElement{
+      padding-left: 0.4em;
+      padding-right: 0.4em;
+      margin-left: 0.5em;
+    }
+  }
+
+  // .wholeCarousel{
+  //   width: 100vw;
+  //   // height: 520vh;
+  //   // margin-left: 10vw;
+  //   // .carouselTile{
+  //   //   width: 100vw;
+  //   //   height: 35vh;
+  //   //   margin-top: 3em;
+  //   //   background-size: contain;
+  //   //   background-repeat: no-repeat;
+      
+  //   // }
+  // }
+
+  .footer{
+    margin-top: 20vh;
+    display: block;
+    background-color: #000;
+    color: white;
+    .footerAddress{
+      width: 100vw;
+      padding-top: 1vh;
+      // background-color: aqua;
+      .footerInner{
+        margin-left: 2vw;
+      }
+    }
+    .footerIcon{
+      margin-right: 2vw;
+      color: rgba(255, 255, 255, 0.4);
+    }
+  }
+
+  .navpad{
+    height: 10vw;
+  }
+  .therapyActiveCard{
+    width: 90vw;
+    margin-left: 5vw;
+    margin-right: 5vw;
+    line-height: 1.5em;
+
+  }
+  .therapieen{
+    padding-top: 10vh;
+    .therapieen-front-line{
+      margin-left: 7vw;
+      margin-right: 7vw;
+    }
+  }
+  .therapies{
+    .therapie{
+      width: 150px;
+      .displayHeader{
+        display: none;
+      }
+      height: 225px;
+      font-size: 0.7em;
+      .therapieOverlay{
+        height: 100%;
+        .therapieText{
+          font-size: 1.2em;
+        }
+      }
+    }
+  }
+}
+
+// @media screen and (max-width: 450px) {
+//   .therapieText{
+//     font-size: 0.1em;
+//   }
+//   .therapieen{
+//     padding-top: 10vh;
+//   }
+//   .therapies{
+    
+//     .therapie{
+//       font-size: 0.6em;
+//       width: 100px;
+//       height: 150px;
+//     }
+//   }
+// }
 

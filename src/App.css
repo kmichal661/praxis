@@ -9,6 +9,10 @@ body {
   color: inherit;
 }
 
+.navpad {
+  height: 5vw;
+}
+
 .navbar {
   color: white;
   background-color: black;
@@ -62,7 +66,8 @@ body {
   width: 100vw;
   height: 80vh;
   margin-top: 3em;
-  background-size: contain;
+  background-position: center;
+  background-attachment: fixed;
   background-repeat: no-repeat;
 }
 
@@ -88,12 +93,14 @@ body {
 
 .therapies {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
 }
 .therapies .therapie {
-  width: 13.6vw;
-  height: 45vh;
+  width: 200px;
+  height: 300px;
   margin-left: 2vw;
+  margin-top: 2vh;
   display: flex;
   justify-content: center;
   color: white;
@@ -135,11 +142,17 @@ body {
   text-align: center;
   user-select: none;
 }
+.therapies .therapieText button {
+  color: unset;
+  background-color: unset;
+  background-image: unset;
+}
 
 .therapyActiveCard {
   width: 80vw;
   line-height: 2em;
   margin-left: 10vw;
+  white-space: pre-wrap;
 }
 .therapyActiveCard h2 {
   text-align: center;
@@ -160,6 +173,91 @@ body {
 .footer .footerIcon {
   margin-right: 2vw;
   color: rgba(255, 255, 255, 0.4);
+}
+
+.pageNotFound {
+  position: relative;
+  width: 100%;
+  text-align: center;
+  padding-top: 15vw;
+}
+.pageNotFound h1 {
+  font-weight: bold;
+}
+.pageNotFound p {
+  font-weight: bold;
+}
+
+.therapieen {
+  padding-top: 5vw;
+}
+.therapieen h2 {
+  text-align: center;
+}
+.therapieen .therapieen-front-line {
+  margin-left: 20vw;
+  margin-right: 20vw;
+  text-align: left;
+}
+
+@media screen and (max-width: 600px) {
+  .navbar .navbarElement {
+    padding-left: 0.4em;
+    padding-right: 0.4em;
+    margin-left: 0.5em;
+  }
+
+  .footer {
+    margin-top: 20vh;
+    display: block;
+    background-color: #000;
+    color: white;
+  }
+  .footer .footerAddress {
+    width: 100vw;
+    padding-top: 1vh;
+  }
+  .footer .footerAddress .footerInner {
+    margin-left: 2vw;
+  }
+  .footer .footerIcon {
+    margin-right: 2vw;
+    color: rgba(255, 255, 255, 0.4);
+  }
+
+  .navpad {
+    height: 10vw;
+  }
+
+  .therapyActiveCard {
+    width: 90vw;
+    margin-left: 5vw;
+    margin-right: 5vw;
+    line-height: 1.5em;
+  }
+
+  .therapieen {
+    padding-top: 10vh;
+  }
+  .therapieen .therapieen-front-line {
+    margin-left: 7vw;
+    margin-right: 7vw;
+  }
+
+  .therapies .therapie {
+    width: 150px;
+    height: 225px;
+    font-size: 0.7em;
+  }
+  .therapies .therapie .displayHeader {
+    display: none;
+  }
+  .therapies .therapie .therapieOverlay {
+    height: 100%;
+  }
+  .therapies .therapie .therapieOverlay .therapieText {
+    font-size: 1.2em;
+  }
 }
 
 /*# sourceMappingURL=App.css.map */
