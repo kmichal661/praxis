@@ -108,10 +108,10 @@ body{
   .carouselTile{
     width: 100vw;
     height: 80vh;
-    margin-top: 3em;
-    // background-size: cover;
+    margin-top: 1.6em;
+    background-size: cover;
     background-position: center;
-    background-attachment: fixed;
+    // background-attachment: fixed;
     background-repeat: no-repeat;
     
   }
@@ -273,22 +273,51 @@ body{
       padding-left: 0.4em;
       padding-right: 0.4em;
       margin-left: 0.5em;
+      // line-height: 0.2em;
+      ;
     }
   }
 
-  // .wholeCarousel{
-  //   width: 100vw;
-  //   // height: 520vh;
-  //   // margin-left: 10vw;
-  //   // .carouselTile{
-  //   //   width: 100vw;
-  //   //   height: 35vh;
-  //   //   margin-top: 3em;
-  //   //   background-size: contain;
-  //   //   background-repeat: no-repeat;
+  .wholeCarousel{
+    width: 100vw;
+    // height: 60vh;
+    // height: 520vh;
+    margin-left: 0vw;
+    .carouselTile{
+      // width: 100vw;
+      height: 30vh;
+      font-size: 0.7em;
+      line-height: 1em;
+      // margin-top: 3em;
+      // background-size: contain;
+      // background-repeat: no-repeat;
       
-  //   // }
-  // }
+    }
+  }
+
+
+  .about{
+    width: 100vw;
+    height: 100vh;
+    margin-left: 0em;
+    padding: 0%;
+    // clear: both;
+    .aboutImageSection{
+      display: none;
+      width: 0em;
+      padding: 0em;
+
+      img{
+        display: none
+      }
+    }
+    .aboutTextSection{
+      // margin-right: 5vw;
+      // line-height: 2em;
+      // margin-left: 35vw;
+    }
+    
+  }
 
   .footer{
     margin-top: 20vh;

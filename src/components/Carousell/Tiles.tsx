@@ -7,7 +7,7 @@ import five from './img/five.png'
 export function Tile1(){
     return(
         <div className="carouselTile" style={{backgroundImage: `url(${one})`}}>
-            <div style={{position:"absolute", marginLeft: "40vw", marginTop: "2vh", color: "white"}}>
+            <div style={{position:"absolute", marginLeft: "40vw", marginTop: "2vh" }}>
              <h3>Wir sind für Euch da...</h3>
              <p>Physiotherapeuten in Deutschland</p>
              </div>
