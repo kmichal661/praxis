@@ -2,6 +2,7 @@ import hotStone from './img/hot-stone.png'
 import foot from './img/foot.jpg'
 import massage from './img/massage.jpg'
 import { useState } from 'react'
+import {Container, Row, Col} from 'react-bootstrap'
 
 function Therapie(props: any){
 
@@ -68,7 +69,7 @@ function Threapies(){
         let therapy = therapies.filter(el => el.id === activeTherapy)[0]
         setActiveCard(therapy)
         setDisplayActiveCard(true)
-        let element = document.getElementsByClassName("therapies")[0]
+        let element = document.getElementsByClassName("navpad")[1]
         setTimeout(() => {
             element.scrollIntoView({behavior: 'smooth', block: "start", inline: 'nearest'})
         },1)
@@ -84,7 +85,13 @@ function Threapies(){
 
     return(
         <>
-        <div className="therapies">{therapieTiles}</div>
+        <Container  >
+            <Row className="therapies" >
+            {therapieTiles}
+            </Row>
+        </Container>
+        <Container className="navpad"></Container>
+        <Container>
         <div className="therapiesFullDescription">
     {displayActiveCard?
     <div className="therapyActiveCard"> 
@@ -93,6 +100,7 @@ function Threapies(){
     </div>
     : ""}
         </div>
+        </Container>
         </>
     )
 }

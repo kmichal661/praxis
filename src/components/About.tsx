@@ -4,7 +4,7 @@ import {Container} from 'react-bootstrap'
 function About(){
     return(
         <div className="about">
-            <Container>
+            
             <div className="aboutImageSection">
                 <img src={AboutImage}  alt="Kasia Safin"/>
                 <br />
@@ -12,7 +12,6 @@ function About(){
                 <p>Physiotherapeutin und Heilpraktikerin</p>
 
             </div>
-            </Container>
 
             <div className="aboutTextSection">
                 <h3>Physiotherapie in Salzgitter und Umgebung</h3>

@@ -63,12 +63,14 @@ body {
   margin-left: 10vw;
 }
 .wholeCarousel .carouselTile {
-  width: 100vw;
+  width: 80vw;
+  margin-left: 0vw;
   height: 80vh;
   margin-top: 1.6em;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  opacity: 1.5;
 }
 
 .about {
@@ -201,6 +203,10 @@ body {
 }
 
 @media screen and (max-width: 600px) {
+  .therapieen .therapieen-front-line {
+    text-align: center;
+  }
+
   .navbar .navbarElement {
     padding-left: 0.4em;
     padding-right: 0.4em;
@@ -219,7 +225,7 @@ body {
 
   .about {
     width: 100vw;
-    height: 100vh;
+    height: auto;
     margin-left: 0em;
     padding: 0%;
   }
@@ -231,6 +237,12 @@ body {
   .about .aboutImageSection img {
     display: none;
   }
+  .about .aboutTextSection {
+    margin-right: 5vw;
+    line-height: 1.8em;
+    margin-left: 4vw;
+  }
+
   .footer {
     margin-top: 20vh;
     display: block;
@@ -250,7 +262,7 @@ body {
   }
 
   .navpad {
-    height: 10vw;
+    height: 16vw;
   }
 
   .therapyActiveCard {

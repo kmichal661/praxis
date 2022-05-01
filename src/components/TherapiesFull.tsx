@@ -1,6 +1,7 @@
 import hotStone from './img/hot-stone.png'
 import foot from './img/foot.jpg'
 import massage from './img/massage.jpg'
+import one_ from './img/one_.png'
 import { useState } from 'react'
 import {Container, Row, Col, Button} from 'react-bootstrap'
 
@@ -58,6 +59,15 @@ function ThreapiesFull(){
             title: "Massage",
             shortDescription: "simple massaage descirption",
             img: massage,
+            link: "therapie2 link to full description ?",
+            fullDescription: "Was Ist Krankengymnastik?\n\nKrankengymnastik ist eine Form der äußerlichen Anwendung von Heilmitteln, mit der v. a. die Bewegungs- und Funktionsfähigkeit des menschlichen Körpers wiederhergestellt, verbessert oder erhalten werden soll.\n\nZiel der Krankengymnastik ist es, eingeschränkte Körperfunktionen zu beseitigen oder präventiv zu vermeiden. Oftmals sind Fehlhaltungen im Job, eine muskuläre Schwäche, oder eine vorangegangene Verletzung oder Operation verantwortlich für entstehende und anhaltende Schmerzen.\n\nBei der Krankengymnastik wird dem Patienten gezeigt, wie Fehlhaltungen erkannt werden und im Alltag selbst dagegen vorgegangen wird. Durch die Erstellung eines Eigenübungsprogramms kann der Patient während und nach der Behandlung langfristig gegen seine Probleme vorgehen. Zusätzlich können in der Krankengymnastik Schmerzen gelindert und die Durchblutung und der Stoffwechsel im betroffenem Gewebe angeregt werden.\n\n\nEinsatzbereiche der Krankengymnastik\n\n- Schmerzen\n- Migräne / Kopfschmerz\n- Verspannungen\n- Bewegungseinschränkungen\n- Postoperativ\n- Posttraumatisch\n- Sportverletzungen (Prellung, Zerrung Muskelfaserriss)\n- Verhärtete Muskulatur nach sportlicher Leistung\n- Verkürzte Muskulatur\n- Verklebte Narben\n- Muskuläre Schwäche\n- Muskuläre Dysbalancen\n- Gleichgewichtsprobleme\n- Koordinationsprobleme\n- Instabilitäten\n- Arthrose\n- Bandscheibenvorfälle\n- Rheuma\n- Fehlstellungen der Wirbelsäule\n- Fehlhaltungen\n- Dessen"
+        },
+        {
+            id:3,
+            textColor: 'black',
+            title: "Anything",
+            shortDescription: "Anything Description of nothing",
+            img: one_,
             link: "therapie2 link to full description ?",
             fullDescription: "Was Ist Krankengymnastik?\n\nKrankengymnastik ist eine Form der äußerlichen Anwendung von Heilmitteln, mit der v. a. die Bewegungs- und Funktionsfähigkeit des menschlichen Körpers wiederhergestellt, verbessert oder erhalten werden soll.\n\nZiel der Krankengymnastik ist es, eingeschränkte Körperfunktionen zu beseitigen oder präventiv zu vermeiden. Oftmals sind Fehlhaltungen im Job, eine muskuläre Schwäche, oder eine vorangegangene Verletzung oder Operation verantwortlich für entstehende und anhaltende Schmerzen.\n\nBei der Krankengymnastik wird dem Patienten gezeigt, wie Fehlhaltungen erkannt werden und im Alltag selbst dagegen vorgegangen wird. Durch die Erstellung eines Eigenübungsprogramms kann der Patient während und nach der Behandlung langfristig gegen seine Probleme vorgehen. Zusätzlich können in der Krankengymnastik Schmerzen gelindert und die Durchblutung und der Stoffwechsel im betroffenem Gewebe angeregt werden.\n\n\nEinsatzbereiche der Krankengymnastik\n\n- Schmerzen\n- Migräne / Kopfschmerz\n- Verspannungen\n- Bewegungseinschränkungen\n- Postoperativ\n- Posttraumatisch\n- Sportverletzungen (Prellung, Zerrung Muskelfaserriss)\n- Verhärtete Muskulatur nach sportlicher Leistung\n- Verkürzte Muskulatur\n- Verklebte Narben\n- Muskuläre Schwäche\n- Muskuläre Dysbalancen\n- Gleichgewichtsprobleme\n- Koordinationsprobleme\n- Instabilitäten\n- Arthrose\n- Bandscheibenvorfälle\n- Rheuma\n- Fehlstellungen der Wirbelsäule\n- Fehlhaltungen\n- Dessen"
         }

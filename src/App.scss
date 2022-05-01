@@ -59,7 +59,6 @@
 
 body{
     font-family: 'Source Sans Pro', sans-serif;
-    // overflow-y: hidden;
 }
 
 .navlink{
@@ -94,11 +93,6 @@ body{
         transition: 0.5s ease;
         @include magic-border(1px, rgba(255, 255, 255, 0.4), 0.3s, 0)
     }
-    // .activeElement{
-    //     background-color: rgba(255, 255, 255, 0.1);
-    //     border-bottom-left-radius: 100%;
-    //     border-bottom-right-radius: 100%;
-    // }
 
 }
 
@@ -106,13 +100,14 @@ body{
   width: 80vw;
   margin-left: 10vw;
   .carouselTile{
-    width: 100vw;
+    width: 80vw;
+    margin-left: 0vw;
     height: 80vh;
     margin-top: 1.6em;
     background-size: cover;
     background-position: center;
-    // background-attachment: fixed;
     background-repeat: no-repeat;
+    opacity: 1.5;
     
   }
 }
@@ -139,8 +134,6 @@ body{
 }
 
 .therapies{
-  // display: inline-block;
-  // background-color: #000;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -163,11 +156,6 @@ body{
     transition: 0.5s ease;
     position: relative;
     cursor: pointer;
-    // border: 1px solid black;
-    // img{
-    //   width: 15vw;
-    //   border-radius: 5%;
-    // }
   }
   .therapie:hover .therapieOverlay{
     height: 100%;
@@ -200,12 +188,6 @@ body{
       background-color: unset;
       background-image: unset;
     }
-    // .btn{
-    //   border-radius: 0%;
-    //   border: none;
-
-    //   // font-size: 0.7em;
-    // }
     
   }
 
@@ -267,6 +249,11 @@ body{
 }
 
 @media screen and (max-width: 600px) {
+  .therapieen{
+    .therapieen-front-line{
+      text-align: center;
+    }
+  }
 
   .navbar{
     .navbarElement{
@@ -298,7 +285,7 @@ body{
 
   .about{
     width: 100vw;
-    height: 100vh;
+    height: auto;
     margin-left: 0em;
     padding: 0%;
     // clear: both;
@@ -312,9 +299,9 @@ body{
       }
     }
     .aboutTextSection{
-      // margin-right: 5vw;
-      // line-height: 2em;
-      // margin-left: 35vw;
+      margin-right: 5vw;
+      line-height: 1.8em;
+      margin-left: 4vw;
     }
     
   }
@@ -339,7 +326,7 @@ body{
   }
 
   .navpad{
-    height: 10vw;
+    height: 16vw;
   }
   .therapyActiveCard{
     width: 90vw;
