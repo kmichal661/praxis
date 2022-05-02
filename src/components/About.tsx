@@ -1,5 +1,4 @@
 import AboutImage from "./img/AboutImage.jpg"
-import {Container} from 'react-bootstrap'
 
 function About(){
     return(

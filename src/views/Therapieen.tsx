@@ -1,5 +1,4 @@
 import {Container, Row} from 'react-bootstrap'
-import {useState} from 'react'
 import ThreapiesFull from "../components/TherapiesFull";
 
 

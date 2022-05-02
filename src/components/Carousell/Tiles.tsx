@@ -1,7 +1,5 @@
-import { url } from 'inspector'
 import one from './img/one.png'
 import two from './img/two.png'
-import three from './img/three.png'
 import five from './img/five.png'
 
 export function Tile1(){
