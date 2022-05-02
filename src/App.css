@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200&display=swap");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css");
 body {
   font-family: "Source Sans Pro", sans-serif;
 }
@@ -110,12 +111,28 @@ body {
   align-items: center;
   display: inline-block;
   border-radius: 5%;
-  background-size: contain;
+  background-size: cover;
+  background-position: center;
   background-repeat: no-repeat;
-  opacity: 0.7;
   transition: 0.5s ease;
   position: relative;
   cursor: pointer;
+}
+.therapies .therapie .displayHeaderWrapper {
+  padding-top: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  margin-top: 6em;
+  width: 100%;
+  color: white;
+  position: absolute;
+}
+.therapies .therapie .displayHeaderWrapper .displayHeader {
+  font-size: 1em;
+}
+.therapies .therapie .displayHeaderWrapper .contactIcon {
+  color: #ff6532;
+  font-size: 1.6em;
+  margin-top: 0.4em;
 }
 .therapies .therapie:hover .therapieOverlay {
   height: 100%;
@@ -136,6 +153,7 @@ body {
   color: white;
   font-size: 20px;
   position: absolute;
+  font-size: 1.1em;
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
@@ -143,6 +161,9 @@ body {
   transform: translate(-50%, -50%);
   text-align: center;
   user-select: none;
+}
+.therapies .therapieText .contactIcon {
+  color: #ff6532;
 }
 .therapies .therapieText button {
   color: unset;
@@ -200,6 +221,24 @@ body {
   margin-left: 20vw;
   margin-right: 20vw;
   text-align: left;
+}
+
+.contact {
+  padding-top: 20vh;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.contact span {
+  padding: 3em;
+  text-align: center;
+}
+.contact .contactIcon {
+  color: #ff6532;
+  font-size: 1.8em;
+}
+.contact h4 {
+  color: #ff6532;
 }
 
 @media screen and (max-width: 600px) {
@@ -284,6 +323,12 @@ body {
     width: 150px;
     height: 225px;
     font-size: 0.7em;
+  }
+  .therapies .therapie h2 {
+    display: none;
+  }
+  .therapies .therapie .displayHeaderWrapper {
+    display: none;
   }
   .therapies .therapie .displayHeader {
     display: none;

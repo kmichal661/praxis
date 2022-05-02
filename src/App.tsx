@@ -8,6 +8,7 @@ import Team from './views/Team';
 import NotFound from './views/NotFound';
 import Footer from './components/Footer'
 import Therapieen from './views/Therapieen';
+import Contact from './views/Contact'
 
 function App() {
   return (
@@ -18,7 +19,7 @@ function App() {
           <Route path='/team' element={<Team />} />
           <Route path='therapien' element={<Therapieen />} />
           <Route path='/praxis' element={<div>Praxis</div>} />
-          <Route path='/kontakt' element={<div>Kontakt</div>} />
+          <Route path='/kontakt' element={<Contact />} />
           <Route path='*' element={<NotFound />} />
         </Routes>
         <Footer />

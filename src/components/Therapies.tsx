@@ -1,8 +1,10 @@
 import hotStone from './img/hot-stone.png'
 import foot from './img/foot.jpg'
 import massage from './img/massage.jpg'
-import { useState } from 'react'
+import { faSuitcaseMedical } from '@fortawesome/free-solid-svg-icons'
+import { useEffect, useState } from 'react'
 import {Container, Row, Col} from 'react-bootstrap'
+import {Animated} from "react-animated-css";
 
 function Therapie(props: any){
 
@@ -39,6 +41,7 @@ function Threapies(){
     const therapies = [
         {
             id: 0,
+            active: true,
             title: "Krankengymnastik",
             shortDescription: "Krankengymnastik ist eine Form der äußerlichen Anwendung",
             img: hotStone,
@@ -47,6 +50,7 @@ function Threapies(){
         },
         {
             id:1,
+            active: false,
             title: "Foot Massage",
             shortDescription: "therapie 2 description message",
             img: foot,
@@ -55,6 +59,7 @@ function Threapies(){
         },
         {
             id:2,
+            active: false,
             title: "Massage",
             shortDescription: "simple massaage descirption",
             img: massage,
@@ -64,14 +69,18 @@ function Threapies(){
     ]
     const [activeCard, setActiveCard] = useState(therapies[0])
     const [displayActiveCard, setDisplayActiveCard] = useState(true)
+    const [act, setAct] = useState(true)
 
     function setActiveTherapy(activeTherapy: number){
+        setAct(false)
         let therapy = therapies.filter(el => el.id === activeTherapy)[0]
         setActiveCard(therapy)
         setDisplayActiveCard(true)
         let element = document.getElementsByClassName("navpad")[1]
         setTimeout(() => {
+            
             element.scrollIntoView({behavior: 'smooth', block: "start", inline: 'nearest'})
+            setAct(true)
         },1)
         
         
@@ -92,14 +101,22 @@ function Threapies(){
         </Container>
         <Container className="navpad"></Container>
         <Container>
+            
         <div className="therapiesFullDescription">
     {displayActiveCard?
+    <Animated animationIn="bounceInLeft" animationOut="bounceOutRight" isVisible={act} >
     <div className="therapyActiveCard"> 
+        
         <h2>{activeCard.title}</h2>
         <p>{activeCard.fullDescription}</p>
+        
+        
     </div>
+    </Animated>
+   
     : ""}
         </div>
+        
         </Container>
         </>
     )
