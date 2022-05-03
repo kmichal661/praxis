@@ -76,16 +76,22 @@ body {
 
 .about {
   width: 100vw;
-  height: 100vh;
+  padding-bottom: 5em;
+  height: auto;
   clear: both;
 }
 .about .aboutImageSection {
+  height: auto;
   margin-left: 5vw;
   float: left;
 }
+.about .aboutImageSection .aboutImageSign {
+  margin-left: 2vw;
+}
 .about .aboutImageSection img {
-  width: 25vw;
-  height: 80vh;
+  width: auto;
+  height: auto;
+  margin-left: 2vw;
   border-radius: 5%;
 }
 .about .aboutTextSection {
@@ -171,6 +177,11 @@ body {
   background-image: unset;
 }
 
+.bulletPoints .contactIcon {
+  color: #ff6532;
+  padding-right: 0.8em;
+}
+
 .therapyActiveCard {
   width: 80vw;
   line-height: 2em;
@@ -241,6 +252,33 @@ body {
   color: #ff6532;
 }
 
+@media screen and (max-width: 1000px) {
+  .wholeCarousel {
+    width: 100vw;
+    margin-left: 0vw;
+  }
+}
+.about .aboutImageSection img {
+  height: 50vh;
+}
+
+@media screen and (max-width: 800px) {
+  .wholeCarousel .carouselTile {
+    height: 60vh;
+  }
+}
+.about .aboutImageSection {
+  margin-left: 1vw;
+  padding-right: 1vw;
+}
+.about .aboutImageSection .aboutImageSign {
+  margin-left: 0vw;
+}
+.about .aboutImageSection img {
+  margin-left: 0vw;
+  height: 40vh;
+}
+
 @media screen and (max-width: 600px) {
   .therapieen .therapieen-front-line {
     text-align: center;
@@ -295,6 +333,9 @@ body {
   .footer .footerAddress .footerInner {
     margin-left: 2vw;
   }
+  .footer .footerOpenings .footerInner {
+    margin-left: 2vw;
+  }
   .footer .footerIcon {
     margin-right: 2vw;
     color: rgba(255, 255, 255, 0.4);
@@ -338,6 +379,13 @@ body {
   }
   .therapies .therapie .therapieOverlay .therapieText {
     font-size: 1.2em;
+  }
+}
+@media screen and (max-width: 450px) {
+  .navbar .navbarElement {
+    margin-left: 0.1em;
+    margin-right: 0.1em;
+    font-size: 0.9em;
   }
 }
 

@@ -115,14 +115,21 @@ body{
 
 .about{
   width: 100vw;
-  height: 100vh;
+  padding-bottom: 5em;
+  height: auto;
   clear: both;
   .aboutImageSection{
+    // background-color: #ff6532;
+    height: auto;
     margin-left: 5vw;
     float: left;
+    .aboutImageSign{
+      margin-left: 2vw;
+    }
     img{
-      width: 25vw;
-      height: 80vh;
+      width: auto;
+      height: auto;
+      margin-left: 2vw;
       border-radius: 5%;
     }
   }
@@ -225,6 +232,14 @@ body{
   
 }
 
+.bulletPoints{
+  .contactIcon{
+    color: #ff6532;
+    padding-right: 0.8em;
+  }
+  
+}
+
 .therapyActiveCard{
   width: 80vw;
   line-height: 2em;
@@ -295,6 +310,44 @@ body{
   }
   h4{
     color: #ff6532;
+  }
+}
+
+@media screen and (max-width: 1000px){
+  .wholeCarousel{
+    width: 100vw;
+    margin-left: 0vw;
+  }
+}
+
+.about{
+  .aboutImageSection{
+    img{
+      height: 50vh;
+    }
+  }
+}
+
+
+@media screen and (max-width: 800px){
+  .wholeCarousel{
+    .carouselTile{
+      height: 60vh;
+    }
+  }
+}
+
+.about{
+  .aboutImageSection{
+    margin-left: 1vw;
+    padding-right: 1vw;
+    .aboutImageSign{
+      margin-left: 0vw;
+    }
+    img{
+      margin-left: 0vw;
+      height: 40vh;
+    }
   }
 }
 
@@ -369,6 +422,11 @@ body{
         margin-left: 2vw;
       }
     }
+    .footerOpenings{
+      .footerInner{
+        margin-left: 2vw;
+      }
+    }
     .footerIcon{
       margin-right: 2vw;
       color: rgba(255, 255, 255, 0.4);
@@ -416,20 +474,14 @@ body{
   }
 }
 
-// @media screen and (max-width: 450px) {
-//   .therapieText{
-//     font-size: 0.1em;
-//   }
-//   .therapieen{
-//     padding-top: 10vh;
-//   }
-//   .therapies{
-    
-//     .therapie{
-//       font-size: 0.6em;
-//       width: 100px;
-//       height: 150px;
-//     }
-//   }
-// }
+@media screen and (max-width: 450px) {
+  .navbar{
+    .navbarElement{
+      margin-left: 0.1em;
+      margin-right: 0.1em;
+      // padding: 0.5em;
+      font-size: 0.9em;
+    }
+  }
+}
 

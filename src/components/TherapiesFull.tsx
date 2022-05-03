@@ -2,7 +2,7 @@
 import { useState } from 'react'
 import {Container, Row, Col} from 'react-bootstrap'
 import {Animated} from "react-animated-css";
-import { faSuitcaseMedical, faPlus } from '@fortawesome/free-solid-svg-icons'
+import { faSuitcaseMedical, faPlus, faCheck } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {therapies} from './exptherapies'
 
@@ -56,7 +56,11 @@ function ThreapiesFull(){
     }
 
     const therapieTiles = therapies.map((e) => {
-        return <Col><Therapie id={e.id} title={e.title} img={e.img} shortDescription={e.shortDescription} setActiveTherapy={setActiveTherapy} textColor={e.textColor} /></Col>
+        return <Col><Therapie id={e.id} title={e.title} img={e.img} shortDescription={e.shortDescription} setActiveTherapy={setActiveTherapy} textColor={e.textColor}  /></Col>
+    })
+
+    const bulls = activeCard.bullets.map((e:any) => {
+        return <div className="bulletPoints"><FontAwesomeIcon icon={faCheck} className="contactIcon" /> {e}</div>
     })
 
 
@@ -75,6 +79,7 @@ function ThreapiesFull(){
     <div className="therapyActiveCard"> 
         <h2>{activeCard.title}</h2>
         <p>{activeCard.fullDescription}</p>
+        <p>{bulls}</p>
     </div>
     </Animated>
     : ""}

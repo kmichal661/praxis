@@ -7,9 +7,10 @@ function About(){
             <div className="aboutImageSection">
                 <img src={AboutImage}  alt="Kasia Safin"/>
                 <br />
+                <div className="aboutImageSign">
                 <h3>Kasia Safin</h3>
-                <p>Physiotherapeutin und Heilpraktikerin</p>
-
+                <p>Physiotherapeutin und Heilpraktikerin</p> 
+                </div>
             </div>
 
             <div className="aboutTextSection">
