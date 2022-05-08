@@ -4,24 +4,18 @@ function About(){
     return(
         <div className="about">
             
-            <div className="aboutImageSection">
+            {/* <div className="aboutImageSection">
                 <img src={AboutImage}  alt="Kasia Safin"/>
                 <br />
                 <div className="aboutImageSign">
                 <h3>Kasia Safin</h3>
                 <p>Physiotherapeutin und Heilpraktikerin</p> 
                 </div>
-            </div>
+            </div> */}
 
             <div className="aboutTextSection">
                 <h3>Physiotherapie in Salzgitter und Umgebung</h3>
-                <p>Herzlich Willkommen auf der Homepage meiner Physiotherapie-Praxis. Die Praxis befindet sich mitten im Ortskern von Salzgitter Thiede. Kostenfreie Parkplätze stehen Ihnen direkt vor der Praxis zur Verfügung. In angenehmer Atmosphäre nehmen wir uns Zeit für Ihre ganz individuelle Behandlung. Hierbei legen wir vor allem Wert auf einen ganzheitlichen Therapieansatz und greifen dabei auf umfangreiche Zusatzqualifikationen, wie z.B. Manueller Therapie, Bobath-Therapie, Manuelle Lymphdrainage, Kiefergelenkbehandlung und Faszientherapie zurück.<br/><br/>
-
-Für Terminvereinbarungen erreichen Sie uns persönlich von Montag bis Freitag im Zeitraum von 9:00 bis 13:00 Uhr unter der Telefonnummer 05341–40 222 44.<br/><br/> Außerhalb dieses Zeitraumes hinterlassen Sie uns eine Nachricht auf dem Anrufbeantworter und wir rufen Sie umgehend zurück.<br/><br/>
-
-Wir freuen uns aus auf Ihre Terminvereinbarung!<br/><br/>
-
-Ihre Kasia Safin & Team</p>
+                <p>Herzlich Willkommen auf der Homepage meiner Physiotherapie-Praxis. Die Praxis befindet sich im Zentrum von Salzgitter Lebenstedt, im Ärztehaus auf der Heckenstraße 48 ( Augenklinik Holak). Die Praxis ist sehr gut zu erreichen durch Bus und Bahn.<br/>Kostenfreie Parkplätze stehen Ihnen direkt vor der Praxis zur Verfügung. <br/><br/>Durch ständige Weiterbildung und jahrelange Erfahrung bietet unser Praxisteam moderne und ganzheitliche Therapieansätze, die auf neuesten Erkenntnissen beruhen und individuell auf Ihre Bedürfnisse und Ihre Erkrankung zugeschnitten sind.<br/><br/>Wir freuen uns auf Ihren Besuch!</p>
             </div>
 
         </div>
