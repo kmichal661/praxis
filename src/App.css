@@ -58,6 +58,15 @@ body {
   transform: scaleX(1) rotate(0deg);
   transition-delay: 0s, 0.3s, 0.6s;
 }
+.navbar .navlogo {
+  margin-top: 5px;
+  left: 0;
+  position: absolute;
+}
+.navbar .navlogo img {
+  width: 30%;
+  margin-left: 0;
+}
 
 .wholeCarousel {
   width: 80vw;
@@ -136,7 +145,7 @@ body {
   font-size: 1em;
 }
 .therapies .therapie .displayHeaderWrapper .contactIcon {
-  color: #ff6532;
+  color: #75c7ce;
   font-size: 1.6em;
   margin-top: 0.4em;
 }
@@ -169,7 +178,7 @@ body {
   user-select: none;
 }
 .therapies .therapieText .contactIcon {
-  color: #ff6532;
+  color: #75c7ce;
 }
 .therapies .therapieText button {
   color: unset;
@@ -178,7 +187,7 @@ body {
 }
 
 .bulletPoints .contactIcon {
-  color: #ff6532;
+  color: #75c7ce;
   padding-right: 0.8em;
 }
 
@@ -235,7 +244,6 @@ body {
 }
 
 .contact {
-  padding-top: 20vh;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -245,14 +253,34 @@ body {
   text-align: center;
 }
 .contact .contactIcon {
-  color: #ff6532;
+  color: #75c7ce;
   font-size: 1.8em;
 }
 .contact h4 {
-  color: #ff6532;
+  color: #75c7ce;
+}
+
+.contactLogo {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+.contactLogo img {
+  width: 40%;
+  margin-top: 2em;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 @media screen and (max-width: 1000px) {
+  .contactLogo img {
+    width: 60%;
+  }
+
+  .navlogo {
+    display: none;
+  }
+
   .wholeCarousel {
     width: 100vw;
     margin-left: 0vw;
@@ -263,6 +291,10 @@ body {
 }
 
 @media screen and (max-width: 800px) {
+  .contactLogo img {
+    width: 70%;
+  }
+
   .wholeCarousel .carouselTile {
     height: 60vh;
   }
@@ -280,6 +312,10 @@ body {
 }
 
 @media screen and (max-width: 600px) {
+  .contactLogo img {
+    width: 100%;
+  }
+
   .therapieen .therapieen-front-line {
     text-align: center;
   }

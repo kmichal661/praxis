@@ -95,6 +95,17 @@ body{
         @include magic-border(1px, rgba(255, 255, 255, 0.4), 0.3s, 0)
     }
 
+    .navlogo{
+      margin-top: 5px;
+      // width: 10vw;
+      left: 0;
+      position: absolute;
+      img{
+        width: 30%;
+        margin-left: 0;
+      }
+    }
+
 }
 
 .wholeCarousel{
@@ -164,7 +175,7 @@ body{
       // border-bottom-left-radius: 5%;
       position: absolute;
       .contactIcon{
-        color: #ff6532;
+        color: #75c7ce;
         font-size: 1.6em;
         margin-top: 0.4em;
       }
@@ -210,7 +221,7 @@ body{
     color: white;
     font-size: 20px;
     .contactIcon{
-      color: #ff6532;
+      color: #75c7ce;
     }
     position: absolute;
     font-size: 1.1em;
@@ -234,7 +245,7 @@ body{
 
 .bulletPoints{
   .contactIcon{
-    color: #ff6532;
+    color: #75c7ce;
     padding-right: 0.8em;
   }
   
@@ -296,7 +307,7 @@ body{
 
 .contact{
   // margin-top: 20vh;
-  padding-top: 20vh;
+  // padding-top: 20vh;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -305,15 +316,37 @@ body{
     text-align: center;
   }
   .contactIcon{
-    color: #ff6532;
+    color: #75c7ce;
     font-size: 1.8em;
   }
   h4{
-    color: #ff6532;
+    color: #75c7ce;
   }
 }
 
+.contactLogo{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  img{
+    width: 40%;
+    margin-top: 2em;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+}
+
 @media screen and (max-width: 1000px){
+  .contactLogo{
+    img{
+      width: 60%;
+    }
+  }
+  .navlogo{
+    display: none;
+
+  }
   .wholeCarousel{
     width: 100vw;
     margin-left: 0vw;
@@ -330,6 +363,11 @@ body{
 
 
 @media screen and (max-width: 800px){
+  .contactLogo{
+    img{
+      width: 70%;
+    }
+  }
   .wholeCarousel{
     .carouselTile{
       height: 60vh;
@@ -352,6 +390,11 @@ body{
 }
 
 @media screen and (max-width: 600px) {
+  .contactLogo{
+    img{
+      width: 100%;
+    }
+  }
   .therapieen{
     .therapieen-front-line{
       text-align: center;

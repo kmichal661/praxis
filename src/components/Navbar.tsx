@@ -1,4 +1,5 @@
 import {NavLink, useLocation} from 'react-router-dom'
+import LogoSafin from '../logo saphin.ai.svg'
  
 function NavbarElemet(props: any){
 
@@ -46,6 +47,7 @@ function Navbar(){
 
     return (
         <div className='navbar'>
+            <span className="navlogo"> <img src={LogoSafin} /> </span>
             {options}
         </div>
     )

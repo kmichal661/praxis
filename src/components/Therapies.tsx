@@ -24,7 +24,7 @@ function Therapie(props: any){
             <div className="therapieOverlay">
                 <div className="therapieText">
                     <h3>{props.title}</h3>
-                    <FontAwesomeIcon icon={faSuitcaseMedical} className="contactIcon" />
+                    {/* <FontAwesomeIcon icon={faSuitcaseMedical} className="contactIcon" /> */}
                     <p>{props.shortDescription}</p>
                     {/* <Button variant="primary">See More</Button> */}
                 </div>
