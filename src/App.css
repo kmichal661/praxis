@@ -82,7 +82,6 @@ body {
   background-repeat: no-repeat;
   opacity: 1.5;
 }
-
 .about {
   width: 100vw;
   padding-bottom: 5em;
@@ -261,6 +260,30 @@ body {
   color: #75c7ce;
 }
 
+.praxisView {
+  padding-top: 10vh;
+  width: 100vw;
+}
+.praxisView .praxisViewHeader h2 {
+  margin-left: 2vw;
+}
+.praxisView .praxisViewHeader p {
+  margin-left: 2vw;
+}
+.praxisView .praxisViewFigures {
+  width: 100vw;
+  justify-content: center;
+}
+.praxisView .praxisViewFigures img {
+  width: 384px;
+  height: 512px;
+  margin-left: 2vw;
+  margin-bottom: 2vh;
+}
+.praxisView .praxisViewFigures .praxisViewFiguresRow {
+  text-align: center;
+}
+
 .contactLogo {
   width: 100%;
   display: flex;
@@ -299,6 +322,12 @@ body {
   .wholeCarousel .carouselTile {
     height: 60vh;
   }
+  .wholeCarousel .carouselTile .carouselTileText {
+    width: 60% !important;
+  }
+  .wholeCarousel .carouselTile .carouselTileTextLast {
+    margin-left: 35vw !important;
+  }
 }
 .about .aboutImageSection {
   margin-left: 1vw;
@@ -335,6 +364,14 @@ body {
     height: 30vh;
     font-size: 0.7em;
     line-height: 1em;
+  }
+  .wholeCarousel .carouselTile .carouselTileText {
+    width: 60% !important;
+  }
+
+  .praxisViewFigures .praxisViewFiguresRow img {
+    margin-left: 0vw;
+    margin-bottom: 0vh;
   }
 
   .about {

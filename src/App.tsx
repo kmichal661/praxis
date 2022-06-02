@@ -7,6 +7,7 @@ import NotFound from './views/NotFound';
 import Footer from './components/Footer'
 import Therapieen from './views/Therapieen';
 import Contact from './views/Contact'
+import Praxis from './views/Praxis'
 
 function App() {
   return (
@@ -14,9 +15,9 @@ function App() {
       <Navbar />
         <Routes>
           <Route path='/' element={<Home />} />
-          <Route path='/team' element={<Team />} />
+          {/* <Route path='/team' element={<Team />} /> */}
           <Route path='therapien' element={<Therapieen />} />
-          <Route path='/praxis' element={<div>Praxis</div>} />
+          <Route path='/praxis' element={<Praxis />} />
           <Route path='/kontakt' element={<Contact />} />
           <Route path='*' element={<NotFound />} />
         </Routes>

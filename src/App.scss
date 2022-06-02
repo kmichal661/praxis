@@ -120,6 +120,9 @@ body{
     background-position: center;
     background-repeat: no-repeat;
     opacity: 1.5;
+    .carouselTileText{
+
+    }
     
   }
 }
@@ -325,6 +328,40 @@ body{
   }
 }
 
+.praxisView{
+  // display: flex;
+  padding-top: 10vh;
+  width: 100vw;
+  .praxisViewHeader{
+    // width: 100vw;
+    h2{
+
+      margin-left: 2vw;
+  
+    }
+    p{
+      margin-left: 2vw;
+    }
+  }
+  .praxisViewFigures{
+    width: 100vw;
+    // .figure{
+    //   display: flex;
+    // }
+    justify-content: center;
+    img{
+      width: 384px;
+      height: 512px;
+      margin-left: 2vw;
+      margin-bottom: 2vh;
+    }
+    .praxisViewFiguresRow{
+      text-align: center;
+    }
+  }
+  
+}
+
 .contactLogo{
   width: 100%;
   display: flex;
@@ -372,6 +409,13 @@ body{
   .wholeCarousel{
     .carouselTile{
       height: 60vh;
+      .carouselTileText{
+        width: 60% !important;
+        
+      }
+      .carouselTileTextLast{
+        margin-left: 35vw !important;
+      }
     }
   }
 }
@@ -422,6 +466,9 @@ body{
       height: 30vh;
       font-size: 0.7em;
       line-height: 1em;
+      .carouselTileText{
+        width: 60% !important;
+      }
       // margin-top: 3em;
       // background-size: contain;
       // background-repeat: no-repeat;
@@ -429,6 +476,17 @@ body{
     }
   }
 
+  .praxisViewFigures{
+    .praxisViewFiguresRow{
+      img{
+  
+        margin-left: 0vw;
+        margin-bottom: 0vh;
+      }
+  
+    }
+  }
+  
 
   .about{
     width: 100vw;

@@ -3,8 +3,12 @@ import LogoSafin from '../logo saphin.ai.svg'
  
 function NavbarElemet(props: any){
 
+    function handleClick(){
+        window.scrollTo({top: 0, behavior: "smooth"})
+    }
+
     return(
-        <NavLink className="navlink navbarElement" to={props.link}><div className={`${props.active? "activeElement" : ""}`}>{props.name}</div></NavLink>
+        <NavLink className="navlink navbarElement" onClick={handleClick} to={props.link}><div className={`${props.active? "activeElement" : ""}`}>{props.name}</div></NavLink>
     )
 }
 
@@ -17,11 +21,11 @@ function Navbar(){
             link: "/",
             isActive: location.pathname === '/'? true : false
         },  
-        {
-            name: "Team",
-            link: "team",
-            isActive: location.pathname === "/team"? true : false
-        },
+        // {
+        //     name: "Team",
+        //     link: "team",
+        //     isActive: location.pathname === "/team"? true : false
+        // },
         {
             name: "Therapien",
             link: "therapien",

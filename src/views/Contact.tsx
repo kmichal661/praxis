@@ -15,20 +15,20 @@ function Contact(){
 
                 <span>
                     <FontAwesomeIcon icon={faHouseChimney} className="contactIcon" /><br/>
-                    <h3>Vist Us</h3>
-                    <p>Lorem Ipsum is simply dummy text of the<br/> printing and typesetting industry.</p>
+                    <h3>Besuchen Sie uns</h3>
+                    <p>Besuchen Sie uns unter der <br/> folgender Adresse.</p>
                     <h4>Heckenstr.48 <br/> 38226 Salzgitter Lebenstedt (Alte Dorf)</h4>
                 </span>
                 <span>
                 <FontAwesomeIcon icon={faPhoneFlip} className="contactIcon" /><br/>
-                    <h3>Call Us</h3>
-                    <p>Lorem Ipsum has been the industry's<br/> standard dummy text</p>
+                    <h3>Rufen Sie uns an</h3>
+                    <p>Sie können uns jederzeit unter der folgenden <br/> Nummer anrufen</p>
                     <h4>(+49) 53 41 / 26 777 00</h4>
                 </span>
                 <span>
                 <FontAwesomeIcon icon={faEnvelope} className="contactIcon" /><br/>
-                    <h3>Message Us</h3>
-                    <p>but also the leap into<br/> electronic typesetting,</p>
+                    <h3>Schreiben Sie uns eine E-Mail</h3>
+                    <p>Sie können uns auch jederzeit eine E-Mail schreiben. <br/> Wir werden versuchen, so schnell wie möglich zu antworten</p>
                     <h4>physio.safin@gmail.com</h4>
                 </span>
 
