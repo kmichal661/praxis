@@ -1,7 +1,13 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCalendarDays, faLocationDot, faPhoneFlip, faEnvelope } from '@fortawesome/free-solid-svg-icons'
+import {NavLink} from 'react-router-dom'
 
 function Footer(){
+
+    function impressumClick(){
+        window.scrollTo({top: 0, behavior: "smooth"})
+    }
+
     return(
         <div className="footer">
 
@@ -11,7 +17,8 @@ function Footer(){
                 <FontAwesomeIcon icon={faLocationDot} className="footerIcon" />  Heckenstr.48,38226 Salzgitter Lebenstedt (Alte Dorf) <br/> <br/>
                 <FontAwesomeIcon icon={faPhoneFlip} className="footerIcon" /> (+49) 53 41 / 26 777 00 <br/><br/>
                 <FontAwesomeIcon icon={faEnvelope} className="footerIcon" /> physio.safin@gmail.com <br/><br/>
-                </div>
+                <span  ><NavLink onClick={impressumClick} to="/impressum" style={{color: 'white', textDecoration: 'none'}}>Impressum</NavLink></span>
+                </div> 
             </div>
             <div className="footerOpenings">
                 <div className="footerInner">

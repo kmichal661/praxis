@@ -275,6 +275,10 @@ body{
     // background-color: aqua;
     .footerInner{
       margin-left: 2vw;
+      span{
+        text-decoration: none;
+        color: white;
+      }
     }
   }
   .footerIcon{
@@ -307,6 +311,12 @@ body{
     margin-right: 20vw;
     text-align: left;
   }
+}
+
+.impressum{
+  width: 90vw;
+  margin-left: 5vw;
+  padding-top: 10vh;
 }
 
 .contact{
@@ -522,6 +532,7 @@ body{
       // background-color: aqua;
       .footerInner{
         margin-left: 2vw;
+        
       }
     }
     .footerOpenings{
