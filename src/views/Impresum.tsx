@@ -1,4 +1,4 @@
-import {Link} from 'react-router-dom'
+
 
 
 function Impressum(){
@@ -39,6 +39,10 @@ Ruhrallee 92<br />
 <p>Wir sind nicht bereit oder verpflichtet, an Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle teilzunehmen.</p>
 
 <p>Quelle: <a href="https://www.e-recht24.de">e-recht24.de</a></p>
+<br/>
+<p>Verbände:</p> 
+<p>Mitglied im Verband für Physikalische Therapie - Niedersachsen</p>
+<p>(VPT) www.vpt-online.de</p>
         </div>
     )
 }
