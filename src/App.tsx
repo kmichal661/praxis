@@ -9,6 +9,7 @@ import Therapieen from './views/Therapieen';
 import Contact from './views/Contact'
 import Praxis from './views/Praxis'
 import Impressum from './views/Impresum';
+import Datenschutz from './views/Datenschutz';
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
           <Route path='/praxis' element={<Praxis />} />
           <Route path='/kontakt' element={<Contact />} />
           <Route path='/impressum' element={<Impressum />} />
+          <Route path='/datenschutz' element={<Datenschutz />} />
           <Route path='*' element={<NotFound />} />
         </Routes>
         <Footer />
